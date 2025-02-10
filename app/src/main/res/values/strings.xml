@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Grab4</string>
+    <string name="title_home">Home</string>
+    <string name="title_aktivitas">Aktivitas</string>
+    <string name="title_pembayaran">Pembayaran</string>
+    <string name="title_kontak">Kontak Masuk</string>
+    <string name="title_akun">Akun</string>
+    <string name="searchbar_hint">Cari</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nama_kendaraan">Kendaraan</string>
+    <string name="content_tab_dasbor">Ini halaman dasbor</string>
+    <string name="content_tab_aktivitas">Ini halaman Aktivitas</string>
+    <string name="tab_text_1">Dasbor</string>
+    <string name="tab_text_2">Aktivitas</string>
+    <string name="rekomendasi_restoren_untukmu">Rekomendasi restoren untukmu</string>
+    <string name="pesan_cemilan_dari">Pesan cemilan dari</string>
+
+    <string-array name="data_name">
+        <item>Motor</item>
+        <item>Mobil</item>
+        <item>Makanan</item>
+        <item>Belanja</item>
+        <item>Semua</item>
+    </string-array>
+    <string-array name="data_name_rv2">
+        <item>Link</item>
+        <item>Temukan</item>
+        <item>Poin</item>
+    </string-array>
+
+    <string-array name="data_photo_rv2">
+        <item>@drawable/bank_ijo_20</item>
+        <item>@drawable/bread_orange_20</item>
+        <item>@drawable/crown_ijo_20</item>
+    </string-array>
+    <string-array name="data_description_rv2">
+        <item>Superbank</item>
+        <item>Promo Dine Out</item>
+        <item>0</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/motor_ijo</item>
+        <item>@drawable/mobil_ijo</item>
+        <item>@drawable/makan_ijo</item>
+        <item>@drawable/belanja_ijo</item>
+        <item>@drawable/more_ijo</item>
+    </integer-array>
+
+    <string-array name="data_name_rv3">
+        <item>Uno Chicken (Hangry Fried Chidken) - Pabcoran M</item>
+        <item>HAUS! x Hot Oppa - DPK Raden Sanim</item>
+        <item>Nasi Uduk Dan Nasi Kuning Panorama - Rangkapan J</item>
+        <item>Ayam Bakar Bumbu Bali Sewangi - Mampang</item>
+        <item>Mie Gacoan - Sawangan</item>
+        <item>Burger King - Sawangan</item>
+    </string-array>
+
+    <string-array name="data_diskon_rv3">
+        <item>Diskon Rp15.000</item>
+        <item>Diskon Rp15.000</item>
+        <item>Diskon Rp15.000</item>
+        <item>Diskon Rp15.000</item>
+        <item>Diskon Rp15.000</item>
+        <item>Diskon Rp15.000</item>
+    </string-array>
+
+    <string-array name="data_description_rv3">
+        <item>Iklan.3.5 km</item>
+        <item>4.6 km</item>
+        <item>1.6 km</item>
+        <item>2.0 km</item>
+        <item>2.2 km</item>
+        <item>2.0 km</item>
+    </string-array>
+
+    <integer-array name="data_photo_rv3">
+        <item>@drawable/uno_chicken</item>
+        <item>@drawable/haus</item>
+        <item>@drawable/nasi_uduk</item>
+        <item>@drawable/ayam_bakar</item>
+        <item>@drawable/gacoan</item>
+        <item>@drawable/burger</item>
+    </integer-array>
+
+
+</resources>
