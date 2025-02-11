@@ -15,6 +15,8 @@
     <string name="tab_text_2">Aktivitas</string>
     <string name="rekomendasi_restoren_untukmu">Rekomendasi restoren untukmu</string>
     <string name="pesan_cemilan_dari">Pesan cemilan dari</string>
+    <string name="info_aktivitas2_ke1">Layanan yang digunakan di 30 hari terakhir akan muncul di sini</string>
+    <string name="info_aktivitas2_ke2">Pergi ke aktivitas sebelumnya untuk menemukan yang lebih lama dari itu.</string>
 
     <string-array name="data_name">
         <item>Motor</item>
@@ -30,9 +32,9 @@
     </string-array>
 
     <string-array name="data_photo_rv2">
-        <item>@drawable/bank_ijo_20</item>
-        <item>@drawable/bread_orange_20</item>
-        <item>@drawable/crown_ijo_20</item>
+        <item>@drawable/bank_ijo_10</item>
+        <item>@drawable/bread_orange_10</item>
+        <item>@drawable/crown_ijo_10</item>
     </string-array>
     <string-array name="data_description_rv2">
         <item>Superbank</item>
@@ -83,6 +85,7 @@
         <item>@drawable/gacoan</item>
         <item>@drawable/burger</item>
     </integer-array>
+
 
 
 </resources>
