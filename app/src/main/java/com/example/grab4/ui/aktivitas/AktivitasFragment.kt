@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.grab4.databinding.FragmentAktivitasBinding
@@ -26,13 +25,9 @@ class AktivitasFragment : Fragment() {
             ViewModelProvider(this).get(DashboardViewModel::class.java)
 
         _binding = FragmentAktivitasBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val view = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+        return view
     }
 
     override fun onDestroyView() {

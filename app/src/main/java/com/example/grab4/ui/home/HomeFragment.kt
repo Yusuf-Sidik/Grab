@@ -4,12 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
 import com.example.grab4.R
 import com.example.grab4.databinding.FragmentHomeBinding
 import com.example.grab4.ui.adapter.Menu1Adapter
@@ -18,8 +15,6 @@ import com.example.grab4.ui.adapter.Menu3Adapter
 import com.example.grab4.ui.dataclass.Menu1
 import com.example.grab4.ui.dataclass.Menu2
 import com.example.grab4.ui.dataclass.Menu3
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeFragment : Fragment() {
 

@@ -43,11 +43,11 @@
     </string-array>
 
     <integer-array name="data_photo">
-        <item>@drawable/motor_ijo</item>
-        <item>@drawable/mobil_ijo</item>
-        <item>@drawable/makan_ijo</item>
-        <item>@drawable/belanja_ijo</item>
-        <item>@drawable/more_ijo</item>
+        <item>@drawable/motor_ijo_large</item>
+        <item>@drawable/mobil_ijo_large</item>
+        <item>@drawable/makan_ijo_large</item>
+        <item>@drawable/belanja_ijo_large</item>
+        <item>@drawable/more_ijo_large</item>
     </integer-array>
 
     <string-array name="data_name_rv3">
