@@ -13,6 +13,8 @@
     <string name="content_tab_aktivitas">Ini halaman Aktivitas</string>
     <string name="tab_text_1">Dasbor</string>
     <string name="tab_text_2">Aktivitas</string>
+    <string name="tab_text_3">Chat</string>
+    <string name="tab_text_4">Notifikasi</string>
     <string name="rekomendasi_restoren_untukmu">Rekomendasi restoren untukmu</string>
     <string name="pesan_cemilan_dari">Pesan cemilan dari</string>
     <string name="info_aktivitas2_ke1">Layanan yang digunakan di 30 hari terakhir akan muncul di sini</string>
@@ -85,7 +87,6 @@
         <item>@drawable/gacoan</item>
         <item>@drawable/burger</item>
     </integer-array>
-
 
 
 </resources>
