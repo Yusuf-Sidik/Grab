@@ -1,9 +1,11 @@
 package com.example.grab4.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +17,7 @@ import com.example.grab4.ui.adapter.Menu3Adapter
 import com.example.grab4.ui.dataclass.Menu1
 import com.example.grab4.ui.dataclass.Menu2
 import com.example.grab4.ui.dataclass.Menu3
+import com.example.grab4.ui.detail.Detail1Activity
 
 class HomeFragment : Fragment() {
 
@@ -123,6 +126,15 @@ class HomeFragment : Fragment() {
     private fun showRecyclerList() {
         rvmenu1.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         val listMenu1Adapter = Menu1Adapter(listmenu1)
+
+        listMenu1Adapter.setOnItemClickCallback(object : Menu1Adapter.OnItemClickCallback{
+            override fun onItemClicked(data: Menu1) {
+                Toast.makeText(requireContext(), "Kamu memilih " + data.name, Toast.LENGTH_SHORT).show()
+                val intent = Intent(requireContext(), Detail1Activity::class.java)
+                startActivity(intent)
+            }
+        })
+
         rvmenu2.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         val listMenu2Adapter = Menu2Adapter(listmenu2)
         rvmenu3.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)

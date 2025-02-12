@@ -12,6 +12,15 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class Menu1Adapter(private val listmenu1: ArrayList<Menu1>): RecyclerView.Adapter<Menu1Adapter.ListViewHolder>() {
 
+    private lateinit var onItemOnClickCallback: OnItemClickCallback
+
+    interface OnItemClickCallback{
+        fun onItemClicked(data: Menu1)
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
+        this.onItemOnClickCallback = onItemClickCallback
+    }
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         //hanya binding dengan layout saja
@@ -28,6 +37,9 @@ class Menu1Adapter(private val listmenu1: ArrayList<Menu1>): RecyclerView.Adapte
         val (photo, name) = listmenu1[position]
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
+        holder.itemView.setOnClickListener{
+            onItemOnClickCallback.onItemClicked(listmenu1[holder.adapterPosition])
+        }
     }
 
     override fun getItemCount(): Int = listmenu1.size
