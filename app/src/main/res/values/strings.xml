@@ -21,6 +21,9 @@
     <string name="info_aktivitas2_ke2">Pergi ke aktivitas sebelumnya untuk menemukan yang lebih lama dari itu.</string>
     <string name="text_chat">Temukan chat kamu dengan staf layanan palanggan kami di sini!</string>
     <string name="pergi_kemana">Ke mana pun kamu mau pergi, ayo kita kesana!</string>
+    <string name="pusat_bantuan">Kamu juga bisa mendapatkan bantuan dari mereka malalui Pusat Bantuan kami.</string>
+    <string name="notifikasi">Pemberitahuan akan ditampilkan disini</string>
+    <string name="iinfo_terbaru">Lihat bagian ini untuk info promo, info terbaru, dan lainnya.</string>
 
     <string-array name="data_name">
         <item>Motor</item>
