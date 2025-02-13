@@ -89,6 +89,14 @@
         <item>@drawable/gacoan</item>
         <item>@drawable/burger</item>
     </integer-array>
+    <integer-array name="data_detail3">
+        <item>@drawable/uno2</item>
+        <item>@drawable/haus2</item>
+        <item>@drawable/nasi_uduk2</item>
+        <item>@drawable/ayam_bakar2</item>
+        <item>@drawable/gacoan2</item>
+        <item>@drawable/burger2</item>
+    </integer-array>
 
 
 </resources>

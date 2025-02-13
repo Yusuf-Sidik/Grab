@@ -10,15 +10,7 @@ import com.example.grab4.R
 import com.example.grab4.ui.dataclass.Menu2
 
 class Menu2Adapter(private val listmenu2: ArrayList<Menu2>): RecyclerView.Adapter<Menu2Adapter.ListViewHolder>() {
-    private lateinit var onItemOnClickCallback: OnItemClickCallback
 
-    interface OnItemClickCallback{
-        fun onItemClicked(data: Menu2)
-    }
-
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
-        this.onItemOnClickCallback = onItemClickCallback
-    }
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgPhoto: ImageView = itemView.findViewById(R.id.img_rv2)
@@ -36,9 +28,6 @@ class Menu2Adapter(private val listmenu2: ArrayList<Menu2>): RecyclerView.Adapte
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvDescription.text = description
-        holder.itemView.setOnClickListener{
-            onItemOnClickCallback.onItemClicked(listmenu2[holder.adapterPosition])
-        }
     }
 
     override fun getItemCount(): Int = listmenu2.size

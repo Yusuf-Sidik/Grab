@@ -1,5 +1,6 @@
 package com.example.grab4.ui.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,8 +9,19 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.grab4.R
 import com.example.grab4.ui.dataclass.Menu3
+import com.example.grab4.ui.detail.Detail3Activity
 
 class Menu3Adapter(private val listmenu3: ArrayList<Menu3>): RecyclerView.Adapter<Menu3Adapter.ListViewHolder>() {
+    private lateinit var onItemOnClickCallback: OnItemClickCallback
+
+    interface OnItemClickCallback{
+        fun onItemClicked(data: Menu3)
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
+        this.onItemOnClickCallback = onItemClickCallback
+    }
+
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgPhoto: ImageView = itemView.findViewById(R.id.imageView)
         val tvName: TextView = itemView.findViewById(R.id.textView6)
@@ -28,6 +40,11 @@ class Menu3Adapter(private val listmenu3: ArrayList<Menu3>): RecyclerView.Adapte
         holder.tvName.text = name
         holder.tvDiskon.text = diskon
         holder.tvDescription.text = description
+        holder.itemView.setOnClickListener{
+            val intent = Intent(holder.itemView.context, Detail3Activity::class.java)
+            intent.putExtra("photo", photo)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = listmenu3.size
