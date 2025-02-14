@@ -7,22 +7,23 @@
     tools:context=".ui.pembayaran.PembayaranFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#F3F6FB"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="#F3F6FB">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pembayaran"
-            android:textStyle="bold"
-            android:textSize="35sp"
+            android:text="@string/pembayaran"
             android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,10 +34,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="70dp"
             android:text="Pembayaran harian fleksibel yang sederhana"
-            android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/textView19"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
@@ -48,5 +48,26 @@
             app:layout_constraintBottom_toBottomOf="@+id/textView19"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView19" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv2_pembayaran"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv1_pembayaran" />
 </androidx.constraintlayout.widget.ConstraintLayout>

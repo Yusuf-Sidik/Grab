@@ -21,7 +21,7 @@
         android:id="@+id/navigation_notifications"
         android:name="com.example.grab4.ui.pembayaran.PembayaranFragment"
         android:label="@string/title_pembayaran"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_pembayaran" />
     <fragment
         android:id="@+id/navigation_kontak"
         android:name="com.example.grab4.ui.kontak.KontakFragment"
