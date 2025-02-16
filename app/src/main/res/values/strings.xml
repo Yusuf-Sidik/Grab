@@ -118,5 +118,18 @@
         <item>@drawable/baseline_add_24</item>
     </integer-array>
 
+    <string-array name="data_rv2_pembayaran2">
+        <item>Tambahkan kartu</item>
+        <item>Top up GrabPay balance</item>
+    </string-array>
+    <string-array name="description_rv2_pembayaran2">
+        <item>Pembayaran nontunai dengan kartu atau debit</item>
+        <item>Use your balance online and in-store</item>
+    </string-array>
+    <string-array name="photo_rv2_pembayaran2">
+        <item>@drawable/baseline_add_card_30</item>
+        <item>@drawable/baseline_credit_card_30</item>
+    </string-array>
+
 
 </resources>

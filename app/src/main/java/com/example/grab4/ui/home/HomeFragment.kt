@@ -139,6 +139,15 @@ class HomeFragment : Fragment() {
         val listMenu2Adapter = Menu2Adapter(listmenu2)
         rvmenu3.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         val listMenu3Adapter = Menu3Adapter(listmenu3)
+
+        listMenu3Adapter.setOnItemClickCallback(object : Menu3Adapter.OnItemClickCallback{
+            override fun onItemClicked(data: Menu3) {
+                Toast.makeText(requireContext(), "Kamu memilih " + data.name, Toast.LENGTH_SHORT).show()
+                val intent = Intent(requireContext(), Detail1Activity::class.java)
+                startActivity(intent)
+            }
+
+        })
         rvmenu4.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         val listMenu4Adapter = Menu3Adapter(listmenu4)
         rvmenu2.adapter = listMenu2Adapter
